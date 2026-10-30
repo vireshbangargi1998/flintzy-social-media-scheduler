@@ -1,32 +1,93 @@
-# React + TypeScript + Vite
+# Social Media Post Scheduler
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A responsive social media post scheduling dashboard built using React, TypeScript, Vite and Ant Design.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://delicate-piroshki-1719cd.netlify.app
 
-## React Compiler
+## GitHub Repository
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+https://github.com/vireshbangargi1998/flintzy-social-media-scheduler
 
-## Expanding the Oxlint configuration
+## Features
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+- Dashboard displaying social media posts grouped by date.
+- Supports Facebook, Instagram, X and TikTok.
+- Post search by content.
+- Filter posts by platform and status.
+- URL query parameters to preserve filters.
+- Create and schedule posts across multiple platforms.
+- Live platform-wise character counter.
+- Character limit validation.
+- Future date and time validation.
+- UTC date storage and local time display.
+- Retry functionality for failed posts.
+- Optimistic UI updates with rollback on failure.
+- Mock API with a one-second delay and simulated failure.
+- Loading, empty and error states.
+- Responsive design for desktop and mobile devices.
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+## Technology Stack
+
+- React.js
+- TypeScript
+- Vite
+- Ant Design
+- Day.js
+- Axios
+- CSS
+
+## Installation and Setup
+
+### Prerequisites
+
+- Node.js
+- npm
+
+### Clone the repository
+
+```bash
+git clone https://github.com/vireshbangargi1998/flintzy-social-media-scheduler.git
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+### Navigate to the project
+
+```bash
+cd flintzy-social-media-scheduler
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Start the development server
+
+```bash
+npm run dev
+```
+
+### Create production build
+
+```bash
+npm run build
+```
+
+## Key Technical Decisions
+
+1. Used React functional components and hooks for UI development and state management.
+2. Used TypeScript interfaces to maintain type safety.
+3. Used reusable components to improve maintainability.
+4. Used mock JSON data to simulate social media posts.
+5. Used URL query parameters to preserve filter selections after refresh.
+6. Used UTC for storing scheduled dates and local time for display.
+7. Implemented optimistic updates for retry functionality with rollback on failure.
+8. Used Ant Design for consistent and responsive UI components.
+
+## Assignment Details
+
+Frontend-only Social Media Post Scheduler assignment for Flintzy.
+
+No real social media integration or publishing is performed. All data and API operations are simulated.
